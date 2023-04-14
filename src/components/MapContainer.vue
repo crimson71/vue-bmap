@@ -6,7 +6,7 @@
 import AMapLoader from '@amap/amap-jsapi-loader'
 import { shallowRef } from '@vue/reactivity'
 window._AMapSecurityConfig = {
-  securityJsCode: 'a66a11d96ba357516db1cc14ba4c1c51'
+  securityJsCode: ''
 }
 export default {
   setup () {
@@ -18,7 +18,7 @@ export default {
   methods: {
     initMap () {
       AMapLoader.load({
-        key: '4298394a250c10384afd548d0cd6052f', // 申请好的Web端开发者Key，首次调用 load 时必填
+        key: '', // 申请好的Web端开发者Key，首次调用 load 时必填
         version: '2.0', // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
         plugins: ['AMap.Geolocation'] // 需要使用的的插件列表，如比例尺'AMap.Scale'等
       })
